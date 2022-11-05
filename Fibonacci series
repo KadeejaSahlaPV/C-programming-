@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int n,a=0,b=1,i,f;
+    printf("Enter the number:");
+    scanf("%d",&n);
+    printf("The fibonacci series upto %d is:",n);
+    for(i=0;i<n;i++)
+      {
+          f=a+b;
+          printf("\n%d",f);
+          b=a;
+          a=f;
+      }
+}
