@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main() 
+ {
+   int a,z,i,d,s,n;
+   printf("Enter the range:");
+   scanf("%d%d",&a,&z);
+   printf("Amstrong number in the range of %d to %d:\n",a,z);
+   for(i=1;i<z;i++)
+    {
+     s=0;
+     n=i;
+     while(n>0)
+      {
+       d=n%10;
+       s=s+d*d*d;
+       n=n/10;
+      }
+    if(i==s)
+    printf("%d\n",i);
+    } 
+ }
