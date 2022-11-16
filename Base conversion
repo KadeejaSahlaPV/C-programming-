@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+   int n,b,i=0,x[10],temp;
+   char ch[]="0123456789ABCDEF";
+   printf("Enter the number: ");
+   scanf("%d",&n);
+   printf("Enter the base: ");
+   scanf("%d",&b);
+   temp=n;
+   while(n)
+   {
+     x[i]=n%b;
+     n=n/b;
+     i++;
+   }
+   printf("%d in the base %d is:",temp,b);
+      for (--i;i>=0;i--) 
+         printf("%c",ch[x[i]]);
+}
